@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "org.thoughtcrime.securesms",
+      "sha256_cert_fingerprints": ["DC:C8:84:98:79:20:B9:82:C7:FE:28:6B:2A:D4:5F:5A:6A:F1:E2:85:EA:6A:07:2C:C9:87:3F:DE:EF:BD:23:E1"]
+    }
+  }
+]
