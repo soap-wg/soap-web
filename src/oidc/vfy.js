@@ -1,7 +1,6 @@
 import { compare } from 'bcryptjs';
 import { compactVerify, decodeJwt, decodeProtectedHeader } from 'jose';
 import GitLab from './GitLab';
-import Google from './Google';
 import Microsoft from './Microsoft';
 
 function getUnix() {
@@ -26,10 +25,7 @@ export function compareFingerprint(alg, rounds, salt, hash, fingerprint) {
 }
 
 export function providerByIssuer(issuer) {
-  if (issuer === Google.issuer) {
-    return Google;
-  // Microsoft's iss URL includes a tenant ID. Ignore this here.
-  } else if (issuer === Microsoft.issuer) {
+  if (issuer === Microsoft.issuer) {
     return Microsoft;
   } else if (issuer === GitLab.issuer) {
     return GitLab;
