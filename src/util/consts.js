@@ -1,2 +1,2 @@
-export const BASE_URL = 'https://messaging-auth.felixlinker.de';
+export const BASE_URL = 'https://soap-proto.net';
 export const VERIFY_PATH = 'verify';
