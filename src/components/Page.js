@@ -7,7 +7,7 @@ export default class Page extends React.Component {
   render() {
     const { children, text } = this.props;
     return <Container maxWidth="sm">
-      <Typography variant="h4">Messaging Auth Prototype</Typography>
+      <Typography variant="h4">SOAP - Web-based Prototype</Typography>
       {text && <Typography variant="body1">{text}</Typography>}
       {children}
     </Container>;
